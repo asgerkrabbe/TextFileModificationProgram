@@ -3,14 +3,19 @@ import java.io.File;
 import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.IOException;
+import java.util.Scanner;
 
 public class main
 {
-    static void modifyFile(String filePath, String oldString, String newString)
+    static void modifyFile()
     {
-        File NumberFile = new File("D:/Programs/IdeaProjects/TextFileModificationProgram/NumberFile");
+        File NumberFile = new File("C:\\Users\\Magnus\\Documents\\IntelliJ projects\\TextFileModificationProgram\\NumberFile");
 
         String oldContent = "";
+        Scanner scanner = new Scanner(System.in);
+        String oldString = scanner.next();
+        String newString = scanner.next();
+
 
         BufferedReader reader = null;
 
@@ -64,7 +69,8 @@ public class main
 
     public static void main(String[] args)
     {
-        modifyFile("D:/Programs/IdeaProjects/TextFileModificationProgram/NumberFile", "123", "12");
+
+        modifyFile();
 
         System.out.println("done");
     }
