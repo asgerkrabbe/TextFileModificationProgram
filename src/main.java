@@ -4,11 +4,11 @@ import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.IOException;
 
-public class textFileModificationProgram
+public class main
 {
     static void modifyFile(String filePath, String oldString, String newString)
     {
-        File NumberFile = new File("D:/Programs/IdeaProjects/Lektier 1/NumberFile");
+        File NumberFile = new File("D:/Programs/IdeaProjects/TextFileModificationProgram/NumberFile");
 
         String oldContent = "";
 
@@ -64,7 +64,7 @@ public class textFileModificationProgram
 
     public static void main(String[] args)
     {
-        modifyFile("C:/StudentFile.txt", "85", "95");
+        modifyFile("D:/Programs/IdeaProjects/TextFileModificationProgram/NumberFile", "123", "12");
 
         System.out.println("done");
     }
