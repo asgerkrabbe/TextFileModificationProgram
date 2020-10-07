@@ -13,7 +13,11 @@ public class main
 
         String oldContent = "";
         Scanner scanner = new Scanner(System.in);
+
+        System.out.println("Type what to replace: ");
         String oldString = scanner.next();
+
+        System.out.println("Type what to replace with: ");
         String newString = scanner.next();
 
 
@@ -50,6 +54,8 @@ public class main
         {
             e.printStackTrace();
         }
+
+        //No matter what the code will be executed
         finally
         {
             try
