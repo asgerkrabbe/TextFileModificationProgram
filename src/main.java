@@ -9,7 +9,7 @@ public class main
 {
     static void modifyFile()
     {
-        File NumberFile = new File("C:\\Users\\Magnus\\Documents\\IntelliJ projects\\TextFileModificationProgram\\NumberFile");
+        File NumberFile = new File("D:/Programs/IdeaProjects/TextFileModificationProgram/NumberFile");
 
         String oldContent = "";
         Scanner scanner = new Scanner(System.in);
