@@ -2,8 +2,8 @@ import java.io.*;
 import java.util.ArrayList;
 import java.util.Scanner;
 
-public class main
-{
+public class main {
+
     static void modifyFile() throws FileNotFoundException {
         File NumberFile = new File("C:/Users/asger/IdeaProjects/TextFileModificationProgram/NumberFile");
         Scanner fileScanner = new Scanner (NumberFile);
