@@ -1,25 +1,26 @@
-import java.io.BufferedReader;
-import java.io.File;
-import java.io.FileReader;
-import java.io.FileWriter;
-import java.io.IOException;
+import java.io.*;
+import java.util.ArrayList;
 import java.util.Scanner;
 
 public class main
 {
-    static void modifyFile()
-    {
-        File NumberFile = new File("D:/Programs/IdeaProjects/TextFileModificationProgram/NumberFile");
+    static void modifyFile() throws FileNotFoundException {
+        File NumberFile = new File("C:/Users/asger/IdeaProjects/TextFileModificationProgram/NumberFile");
+        Scanner fileScanner = new Scanner (NumberFile);
 
         String oldContent = "";
         Scanner scanner = new Scanner(System.in);
+
+        ArrayList<Object> list = new ArrayList<>();
+       while (fileScanner.hasNextLine()) {
+            list.add(fileScanner.hasNextLine());
+        }
 
         System.out.println("Type what to replace: ");
         String oldString = scanner.next();
 
         System.out.println("Type what to replace with: ");
         String newString = scanner.next();
-
 
         BufferedReader reader = null;
 
@@ -73,8 +74,7 @@ public class main
         }
     }
 
-    public static void main(String[] args)
-    {
+    public static void main(String[] args) throws FileNotFoundException {
 
         modifyFile();
 
